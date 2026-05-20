@@ -21,8 +21,8 @@ patient_age = int(input("Enter patient's age: "))
 # Tuổi >= 80 → ưu tiên người cao tuổi
 # Còn lại → khám thường
 # b4 In phiếu khám
-if patient_age < 0 or patient_age > 150:
-    print("ERROR: Invalid age (0-150).")
+if patient_name.strip() == "" or patient_age < 0 or patient_age > 150:
+    print("ERROR: Invalid age (0-150) and not whitespace.")
 else:
     if patient_age < 6:
         priority = "PRIORITY: Pediatric patient - Send to Pediatrics Department."
